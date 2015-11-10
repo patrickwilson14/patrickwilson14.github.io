@@ -1,0 +1,120 @@
+/* line 1, ../sass/main.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+  font-family: "Karla", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+}
+/* line 12, ../sass/main.scss */
+body header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 10000;
+  background-color: #fff;
+}
+/* line 21, ../sass/main.scss */
+body header ul {
+  display: inline-block;
+  list-style-type: disc;
+  -webkit-padding-start: 0;
+}
+/* line 26, ../sass/main.scss */
+body header ul li {
+  margin-left: 30px;
+  margin-right: 30px;
+  display: inline-block;
+  text-align: -webkit-match-parent;
+}
+/* line 35, ../sass/main.scss */
+body .content {
+  display: block;
+  z-index: 1;
+  overflow: hidden;
+  margin: 10px;
+  padding-top: 110px;
+}
+/* line 42, ../sass/main.scss */
+body .content .album-cover {
+  width: 25%;
+  padding-bottom: 25%;
+  color: #fff;
+  position: relative;
+  display: block;
+  float: left;
+}
+/* line 50, ../sass/main.scss */
+body .content .album-cover .album-contents {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  padding: 5px;
+}
+/* line 58, ../sass/main.scss */
+body .content .album-cover .album-contents img {
+  width: 100%;
+}
+@media only screen and (max-width: 480px) {
+  /* line 35, ../sass/main.scss */
+  body .content {
+    /* Smartphone view: 1 tile */
+  }
+  /* line 66, ../sass/main.scss */
+  body .content .album-cover {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+}
+@media only screen and (max-width: 650px) and (min-width: 481px) {
+  /* line 35, ../sass/main.scss */
+  body .content {
+    /* Tablet view: 2 tiles */
+  }
+  /* line 73, ../sass/main.scss */
+  body .content .album-cover {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+}
+@media only screen and (max-width: 1050px) and (min-width: 651px) {
+  /* line 35, ../sass/main.scss */
+  body .content {
+    /* Small desktop / ipad view: 3 tiles */
+  }
+  /* line 80, ../sass/main.scss */
+  body .content .album-cover {
+    width: 33.3%;
+    padding-bottom: 33.3%;
+  }
+}
+@media only screen and (max-width: 1290px) and (min-width: 1051px) {
+  /* line 35, ../sass/main.scss */
+  body .content {
+    /* Medium desktop: 4 tiles */
+  }
+  /* line 87, ../sass/main.scss */
+  body .content .album-cover {
+    width: 25%;
+    padding-bottom: 25%;
+  }
+}
+/* line 94, ../sass/main.scss */
+body hr {
+  width: 75%;
+}
+/* line 98, ../sass/main.scss */
+body footer {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
